@@ -21,7 +21,7 @@ This is a lightweight plugin with no CSS which fetchs an RSS feed and displays i
 <ul>
 	<li><strong>url</strong> - The url of the feed you wish to fetch from</li>
 
-	<li><strong>items</strong> - Number of items from the feed you wish to fetch</li>
+	<li><strong>items</strong> - Number of items from the feed you wish to fetch <em>(Default is 10)</em></li>
 
 	<li><strong>excerpt</strong> - How many words you want to display for each item</br>
 	<em>(Default is 0 or infinite)</em></li>
