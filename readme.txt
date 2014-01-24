@@ -8,11 +8,11 @@ Stable tag: 3.8.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A simple, lightweight RSS aggregator plugin which uses shortcode to fetch and display an RSS feed.
+A simple, lightweight RSS aggregator plugin which uses shortcode to fetch and display a RSS feed.
 
 == Description ==
 
-This is a lightweight plugin with no CSS which fetchs an RSS feed and displays it in an unordered list. This plugin was created for developers, you must style the list yourself.
+This is a lightweight plugin with no CSS which fetchs a RSS feed and displays it in an unordered list. This plugin was created for developers, you must style the list yourself.
 
 <h4>Example:</h4>
 <p>[wp_rss_retriever url="http://travistaylor.com/feed/" items="10" excerpt="50" read_more ="false" new_window="false"]</p>
