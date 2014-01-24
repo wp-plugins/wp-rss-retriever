@@ -8,14 +8,13 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight RSS fetch plugin which uses the shortcode [wp_rss_retriever] to fetch and display an RSS feed in an unordered list.
+A simple, lightweight RSS aggregator plugin which uses the shortcode to fetch and display an RSS feed.
 
 == Description ==
 
-This is a lightweight plugin with no CSS which fetchs an RSS feed and echos it on the page in an unordered list.
+This is a lightweight plugin with no CSS which fetchs an RSS feed and echos it on the page in an unordered list. This plugin was created for developers, you must style the list yourself.
 
-Example:
-
+<h4>Example:</h4>
 <code>[wp_rss_retriever url="http://travistaylor.com/feed/" items="10" excerpt="50" read_more ="false" new_window="false"]</code>
 
 <h4>Properties:</h4>
