@@ -1,4 +1,4 @@
-=== WP RSS Retriever ===
+=== RSS Retriever ===
 Contributors: tjtaylor
 Donate link: http://travistaylor.com/
 Tags: rss, rss retriever, wp rss retriever, rss aggregator, rss feed, rss fetch feed, rss fetch, fetch feed
