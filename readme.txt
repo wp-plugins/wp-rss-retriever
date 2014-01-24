@@ -17,6 +17,7 @@ This plugin fetchs a RSS feed and displays it in an unordered list using shortco
 <h4>Features:</h4>
 <ul>
 	<li>Fetch as many RSS feeds as you want</li>
+	<li>Display the RSS feed wherever you want using shortcode</li>
 	<li>Control whether to display the entire RSS feeds content or just an excerpt</li>
 	<li>Control how many words display in the excerpt</li>
 	<li>Control whether it has a Read more link or not</li>
