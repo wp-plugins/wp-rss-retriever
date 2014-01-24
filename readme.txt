@@ -24,13 +24,13 @@ This is a lightweight plugin with no CSS which fetchs an RSS feed and displays i
 	<li><strong>items</strong> - Number of items from the feed you wish to fetch</li>
 
 	<li><strong>excerpt</strong> - How many words you want to display for each item</br>
-	<em>Default is 0 or infinite</em></li>
+	<em>(Default is 0 or infinite)</em></li>
 
 	<li><strong>read_more</strong> - Whether to display a read more link or not</br>
-	<em>true or false, defaults to true</em></li>
+	<em>(true or false, defaults to true)</em></li>
 
 	<li><strong>new_window</strong> - Whether to open the title link and read more link in a new window</br>
-	<em>true or false, defaults to true</em></li>
+	<em>(true or false, defaults to true)</em></li>
 </ul>
 
 == Installation ==
