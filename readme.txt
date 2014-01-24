@@ -8,7 +8,7 @@ Stable tag: 3.8.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A simple, lightweight RSS aggregator plugin which uses the shortcode to fetch and display an RSS feed.
+A simple, lightweight RSS aggregator plugin which uses shortcode to fetch and display an RSS feed.
 
 == Description ==
 
