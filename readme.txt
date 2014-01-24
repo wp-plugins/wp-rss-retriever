@@ -16,28 +16,26 @@ This is a lightweight plugin with no CSS which fetchs an RSS feed and echos it o
 
 Example:
 
-[wp_rss_retriever url="http://travistaylor.com/feed/" items="10" excerpt="50" read_more ="false" new_window="false"]
+<code>[wp_rss_retriever url="http://travistaylor.com/feed/" items="10" excerpt="50" read_more ="false" new_window="false"]</code>
 
 <h4>Properties:</h4>
-<dl>
-<dt>url</dt>
-<dd>The URL of the feed you wish to fetch from</dd>
-</dl>
+<p><strong>url</strong></br>
+The url of the feed you wish to fetch from</p>
 
-<strong>items</strong>
-Number of items from the feed you wish to fetch
+<p><strong>items</strong></br>
+Number of items from the feed you wish to fetch</p>
 
-<strong>excerpt</strong>
-How many words you want to display for each item
-<em>Default is 0 or infinite</em>
+<p><strong>excerpt</strong></br>
+How many words you want to display for each item</br>
+<em>Default is 0 or infinite</em></p>
 
-<strong>read_more</strong>
-Whether to display a read more link or not
-<em>true or false, defaults to true</em>
+<p><strong>read_more</strong></br>
+Whether to display a read more link or not</br>
+<em>true or false, defaults to true</em></p>
 
-<strong>new_window</strong>
-Whether to open the title link and read more link in a new window
-<em>true or false, defaults to true</em>
+<p><strong>new_window</strong></br>
+Whether to open the title link and read more link in a new window</br>
+<em>true or false, defaults to true</em></p>
 
 == Installation ==
 
