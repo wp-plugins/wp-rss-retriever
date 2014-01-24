@@ -14,6 +14,17 @@ A simple, lightweight RSS aggregator plugin which uses shortcode to fetch and di
 
 This plugin fetchs a RSS feed and displays it in an unordered list using shortcode.
 
+<h4>Features:</h4>
+<ul>
+	<li>Fetch as many RSS feeds as you want</li>
+	<li>Control whether to display the entire RSS feeds content or just an excerpt</li>
+	<li>Control how many words display in the excerpt</li>
+	<li>Control whether it has a Read more link or not</li>
+	<li>Control whether links open in a new window or not</li>
+	<li>Simple, lightweight, and fast</li>
+	<li>Easy to setup</li>
+</ul>
+
 <h4>Live Demo:</h4>
 <p><a href="http://travistaylor.com/wp-rss-retriever-demo/" target="_blank">http://travistaylor.com/wp-rss-retriever-demo/</a></p>
 
