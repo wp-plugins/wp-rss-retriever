@@ -4,7 +4,7 @@ Donate link: http://travistaylor.com/
 Tags: rss, rss retriever, wp rss retriever, rss aggregator, rss feed, rss fetch feed, rss fetch, fetch feed
 Requires at least: 2.8
 Tested up to: 3.8.1
-Stable tag: 4.3
+Stable tag: 3.8.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
