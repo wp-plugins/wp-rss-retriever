@@ -12,10 +12,10 @@ A simple, lightweight RSS aggregator plugin which uses shortcode to fetch and di
 
 == Description ==
 
-Note: This plugin does not include CSS. It was created so you could easily style the list to match your website. If you would like to see more features for the plugin, let me know.
+This plugin fetchs a RSS feed and displays it in an unordered list using shortcode.
 
 <h4>Example:</h4>
-<p>[wp_rss_retriever url="http://travistaylor.com/feed/" items="10" excerpt="50" read_more ="false" new_window="false"]</p>
+<p>[wp_rss_retriever url="http://travistaylor.com/feed/" items="10"]</p>
 
 <h4>Properties:</h4>
 <ul>
@@ -32,6 +32,8 @@ Note: This plugin does not include CSS. It was created so you could easily style
 	<li><strong>new_window</strong> - Whether to open the title link and read more link in a new window</br>
 	<em>(true or false, defaults to true)</em></li>
 </ul>
+
+Note: This plugin does not include CSS. It was created so you could easily style the list to match your website. If you would like to see more features for the plugin, let me know.
 
 == Installation ==
 
