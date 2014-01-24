@@ -18,10 +18,11 @@ Example:
 
 [wp_rss_retriever url="http://travistaylor.com/feed/" items="10" excerpt="50" read_more ="false" new_window="false"]
 
-Properties:
-
-<strong>url</strong>
-The URL of the feed you wish to fetch from
+<h4>Properties:</h4>
+<dl>
+<dt>url</dt>
+<dd>The URL of the feed you wish to fetch from</dd>
+</dl>
 
 <strong>items</strong>
 Number of items from the feed you wish to fetch
