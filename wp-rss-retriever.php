@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WP RSS Retriever
+ * Plugin Name: RSS Retriever
  * Plugin URI: http://wordpress.org/plugins/wp-rss-retriever/
  * Description: A lightweight RSS fetch plugin which uses the shortcode [wp_rss_retriever] to fetch and display an RSS feed in an unordered list.
  * Version: 1.0
