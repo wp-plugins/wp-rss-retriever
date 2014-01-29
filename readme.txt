@@ -64,3 +64,6 @@ This section describes how to install the plugin and get it working.
 
 = 1.0 =
 * Initial release
+
+= 1.0.1 =
+* Fixes bug where full excerpt included html and broken images
