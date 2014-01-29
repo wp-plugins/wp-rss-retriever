@@ -3,7 +3,7 @@
  * Plugin Name: RSS Retriever
  * Plugin URI: http://wordpress.org/plugins/wp-rss-retriever/
  * Description: A lightweight RSS fetch plugin which uses the shortcode [wp_rss_retriever] to fetch and display an RSS feed in an unordered list.
- * Version: 1.0
+ * Version: 1.0.1
  * Author: Travis Taylor
  * Author URI: http://travistaylor.com/
  * License: GPL2
@@ -45,11 +45,11 @@ function wp_rss_retriever_func( $atts, $content = null ){
                             title="' . sprintf( __( 'Posted %s', 'wp-rss-retriever' ), $item->get_date('j F Y | g:i a') ) . '">';
                             $output .= esc_html( $item->get_title() );
                         $output .= '</a>';
+                        $content = $item->get_content();
                         if ( $excerpt > 0 ) {
-                            $content = $item->get_content();
                             $output .= '<p>' . esc_html(implode(' ', array_slice(explode(' ', strip_tags($content)), 0, $excerpt))) . "...";
                         } else {
-                            $output .= '<p>' . $item->get_content();
+                            $output .= '<p>' . strip_tags($content);
                         }
                         if( $read_more == 'true' ) {
                             $output .= ' <a class="wp_rss_retriever_readmore" ' . $newWindowOutput . 'href="' . esc_url( $item->get_permalink() ) . '"
