@@ -4,7 +4,7 @@ Donate link: http://travistaylor.com/
 Tags: rss, rss retriever, wp rss retriever, rss aggregator, rss feed, rss fetch feed, rss fetch, fetch feed
 Requires at least: 2.8
 Tested up to: 3.8.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -66,4 +66,7 @@ This section describes how to install the plugin and get it working.
 * Initial release
 
 = 1.0.1 =
-* Fixes bug where full excerpt included html and broken images
+* Fixes bug where excerpt included html and broken images
+
+= 1.0.2 =
+* Pulls images in when excerpt is not enabled
