@@ -35,7 +35,7 @@ function wp_rss_retriever_func( $atts, $content = null ){
     endif;
     $output = '<div class="wp_rss_retriever">';
         $output .= '<ul>';
-            if ( !$maxitems ) : 
+            if ( !isset($maxitems) ) : 
                 $output .= '<li>' . _e( 'No items', 'wp-rss-retriever' ) . '</li>';
             else : 
                 // Loop through each feed item and display each item.
