@@ -1,6 +1,6 @@
 === RSS Retriever ===
 Contributors: tjtaylor
-Donate link: http://travistaylor.com/
+Donate link: http://travistaylor.com/wp-rss-retriever-demo/
 Tags: rss, rss retriever, wp rss retriever, rss aggregator, rss feed, rss fetch feed, rss fetch, fetch feed
 Requires at least: 2.8
 Tested up to: 3.8.1
