@@ -30,7 +30,7 @@ This plugin fetchs an RSS feed and displays it in an unordered list using shortc
 <p><a href="http://travistaylor.com/wp-rss-retriever-demo/" target="_blank">http://travistaylor.com/wp-rss-retriever-demo/</a></p>
 
 <h4>Example:</h4>
-<p>[wp_rss_retriever url="http://travistaylor.com/feed/" items="10"]</p>
+<pre><code>[wp_rss_retriever url="http://travistaylor.com/feed/" items="10"]</code></pre>
 
 <h4>Properties:</h4>
 <ul>
