@@ -91,3 +91,9 @@ This section describes how to install the plugin and get it working.
 * Control size of thumbnail
 * Set cache time (in seconds)
 * Now includes small CSS file, required for thumbnail support
+
+= 1.1.1 =
+* Support for aggregating multiple feeds into one list
+* Ability to order posts by date or reverse date
+* Options to display or remove source and date
+* Option to remove title
