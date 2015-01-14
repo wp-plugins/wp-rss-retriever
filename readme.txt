@@ -53,7 +53,7 @@ This plugin fetchs an RSS feed, or multiple feeds, and displays them in an unord
 
 	<li><strong>new_window</strong> - Whether to open the title link and read more link in a new window	<em>(true or false, defaults to true)</em></li>
 
-	<li><strong>thumbnail</strong> - Whether or not you want to display a thumbnail, and if so, what size you want it to be<em>(true or false, defaults to true. Inserting a number will change the size, default is 150)</em></li>
+	<li><strong>thumbnail**</strong> - Whether or not you want to display a thumbnail, and if so, what size you want it to be<em>(true or false, defaults to true. Inserting a number will change the size, default is 150)</em></li>
 
 	<li><strong>source</strong> - Whether to display the source or not <em>(true or false, defaults to true)</em></li>
 
@@ -62,7 +62,9 @@ This plugin fetchs an RSS feed, or multiple feeds, and displays them in an unord
 	<li><strong>cache</strong> - How long you want the feed to cache the results in seconds <em>(Default is 43200, (12 hours))</em></li>
 </ul>
 
-Note: If you would like to see more features for the plugin, let me know.
+**PLEASE NOTE: Using thumbnails can cause longer load times depending on the feed you are fetching from, use with caution. 
+
+If you would like to see more features for the plugin, please let me know.
 
 == Installation ==
 
