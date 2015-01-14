@@ -64,7 +64,7 @@ This plugin fetchs an RSS feed, or multiple feeds, and displays them in an unord
 
 **PLEASE NOTE: Using thumbnails can cause longer load times depending on the feed you are fetching from, use with caution. 
 
-If you would like to see more features for the plugin, please let me know.
+Please post any issues under the support tab. If you use and like this plugin, please don't forget to <strong>rate</strong> it! Additionally, if you would like to see more features for the plugin, please let me know.
 
 == Installation ==
 
