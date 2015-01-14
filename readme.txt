@@ -47,7 +47,7 @@ This plugin fetchs an RSS feed, or multiple feeds, and displays them in an unord
 
 	<li><strong>title</strong> - Whether to display the title or not <em>(true or false, defaults to true)</em></li>
 
-	<li><strong>excerpt</strong> - How many words you want to display for each item	<em>(Default is 0 or infinite)</em></li>
+	<li><strong>excerpt</strong> - How many words you want to display for each item	<em>(Default is 0 or infinite, use 'none' to remove the excerpt)</em></li>
 
 	<li><strong>read_more</strong> - Whether to display a read more link or not	<em>(true or false, defaults to true)</em></li>
 
