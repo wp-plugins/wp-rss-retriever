@@ -37,20 +37,20 @@ a.wp_rss_retriever_title {
   height: auto;
 }
 
-.wp_rss_retriever_date {
+a.wp_rss_retriever_readmore {
+	display: inline-block;
+}
+
+.wp_rss_retriever_metadata {
 	margin: .5em 0;
 	font-size: 85%;
 }
 
-/* Clearing floats */
-.wp_rss_retriever li:after {
-	content: '';
-	display: table;
-	clear: both;
-}
-
-.wp_rss_retriever_date:before,
-.wp_rss_retriever_date:after {
+/* Clear floats */
+.wp_rss_retriever ul:before,
+.wp_rss_retriever li:after,
+.wp_rss_retriever_metadata:after,
+.wp_rss_retriever_metadata:before {
 	content: '';
 	display: table;
 	clear: both;

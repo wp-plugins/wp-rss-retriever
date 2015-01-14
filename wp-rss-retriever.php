@@ -3,7 +3,7 @@
  * Plugin Name: RSS Retriever
  * Plugin URI: http://wordpress.org/plugins/wp-rss-retriever/
  * Description: A lightweight RSS fetch plugin which uses the shortcode [wp_rss_retriever] to fetch and display an RSS feed in an unordered list.
- * Version: 1.1
+ * Version: 1.1.1
  * Author: Travis Taylor
  * Author URI: http://travistaylor.com/
  * License: GPL2
@@ -24,29 +24,43 @@ function wp_rss_retriever_func( $atts, $content = null ){
 	extract( shortcode_atts( array(
 		'url' => '#',
 		'items' => '10',
+        'orderby' => 'default',
+        'title' => 'true',
 		'excerpt' => '0',
 		'read_more' => 'true',
 		'new_window' => 'true',
         'thumbnail' => 'false',
+        'source' => 'true',
+        'date' => 'true',
         'cache' => '43200'
 	), $atts ) );
 
     update_option( 'wp_rss_cache', $cache );
 
+    //multiple urls
+    $urls = explode(',', $url);
+
     add_filter( 'wp_feed_cache_transient_lifetime', 'wp_rss_retriever_cache' );
 
-    $rss = fetch_feed( $url );
+    $rss = fetch_feed( $urls );
 
     remove_filter( 'wp_feed_cache_transient_lifetime', 'wp_rss_retriever_cache' );
 
     if ( ! is_wp_error( $rss ) ) :
 
+        if ($orderby == 'date' || $orderby == 'date_reverse') {
+            $rss->enable_order_by_date(true);
+        }
         $maxitems = $rss->get_item_quantity( $items ); 
         $rss_items = $rss->get_items( 0, $maxitems );
         if ( $new_window != 'false' ) {
             $newWindowOutput = 'target="_blank" ';
         } else {
             $newWindowOutput = NULL;
+        }
+
+        if ($orderby == 'date_reverse') {
+            $rss_items = array_reverse($rss_items);
         }
 
     endif;
@@ -59,15 +73,19 @@ function wp_rss_retriever_func( $atts, $content = null ){
                 foreach ( $rss_items as $item ) :
                     //variables
                     $content = $item->get_content();
-                    $title = esc_html( $item->get_title() );
+                    $the_title = $item->get_title();
                     $enclosure = $item->get_enclosure();
 
                     //build output
-                    $output .= '<li class="wp_rss_retriever_item">';
-                        $output .= '<a class="wp_rss_retriever_title" ' . $newWindowOutput . 'href="' . esc_url( $item->get_permalink() ) . '"
-                            title="' . $title . '">';
-                            $output .= $title;
-                        $output .= '</a>';               
+                    $output .= '<li class="wp_rss_retriever_item"><div class="wp_rss_retriever_item_wrapper">';
+                        //title
+                        if ($title == 'true') {
+                            $output .= '<a class="wp_rss_retriever_title" ' . $newWindowOutput . 'href="' . esc_url( $item->get_permalink() ) . '"
+                                title="' . $the_title . '">';
+                                $output .= $the_title;
+                            $output .= '</a>';   
+                        }
+                        //thumbnail
                         if ($thumbnail != 'false' && $enclosure) {
                             $thumbnail_image = $enclosure->get_thumbnail();                     
                             if ($thumbnail_image) {
@@ -85,6 +103,7 @@ function wp_rss_retriever_func( $atts, $content = null ){
                                 }
                             }
                         }
+                        //content
                         $output .= '<div class="wp_rss_retriever_container">';
                         if ( $excerpt != 'none' ) {
                             if ( $excerpt > 0 ) {
@@ -99,8 +118,23 @@ function wp_rss_retriever_func( $atts, $content = null ){
                                 $output .= '</a>';
                             }
                         }
-                        $output .= '<div class="wp_rss_retriever_date">' . sprintf( __( 'Published: %s', 'wp-rss-retriever' ), $item->get_date('F j, Y - g:i a') ) . '</div>';
-                    $output .= '</div></li>';
+                        //metadata
+                        if ($source == 'true' || $date == 'true') {
+                            $output .= '<div class="wp_rss_retriever_metadata">';
+                                $source_title = $item->get_feed()->get_title();
+                                $time = $item->get_date('F j, Y - g:i a');
+                                if ($source == 'true' && $source_title) {
+                                    $output .= '<span class="wp_rss_retriever_source">' . sprintf( __( 'Source: %s', 'wp-rss-retriever' ), $source_title ) . '</span>';
+                                }
+                                if ($source == 'true' && $date == 'true') {
+                                    $output .= ' | ';
+                                }
+                                if ($date == 'true' && $time) {
+                                    $output .= '<span class="wp_rss_retriever_date">' . sprintf( __( 'Published: %s', 'wp-rss-retriever' ), $time ) . '</span>';
+                                }
+                            $output .= '</div>';
+                        }
+                    $output .= '</div></div></li>';
                 endforeach;
             endif;
         $output .= '</ul>';
