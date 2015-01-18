@@ -1,7 +1,7 @@
 === RSS Retriever ===
 Contributors: tjtaylor, stephenkhouri
 Donate link: http://travistaylor.com/wp-rss-retriever-demo/
-Tags: rss, rss plugin, rss retriever, wp rss retriever, rss aggregator, rss feed, rss fetch feed, rss fetch, fetch feed, rss widget, rss aggregator widget, rss shortcode, rss feed shortcode, rss aggregator shortcode, rss multiple feeds, fetch multiple feeds, rss cache, rss feed cache
+Tags: rss, rss plugin, rss retriever, wp rss retriever, rss aggregator, rss feed, rss fetch feed, rss fetch, fetch feed, rss widget, rss aggregator widget, rss shortcode, rss feed shortcode, rss aggregator shortcode, rss multiple feeds, fetch multiple feeds, rss cache, rss feed cache, rss thumbnails, rss images, rss feed image
 Requires at least: 2.8
 Tested up to: 4.1
 Stable tag: 1.1.1
