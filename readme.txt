@@ -1,5 +1,5 @@
 === RSS Retriever ===
-Contributors: tjtaylor
+Contributors: tjtaylor, stephenkhouri
 Donate link: http://travistaylor.com/wp-rss-retriever-demo/
 Tags: rss, rss retriever, wp rss retriever, rss aggregator, rss feed, rss fetch feed, rss fetch, fetch feed
 Requires at least: 2.8
@@ -47,13 +47,13 @@ This plugin fetchs an RSS feed, or multiple feeds, and displays them in an unord
 
 	<li><strong>title</strong> - Whether to display the title or not <em>(true or false, defaults to true)</em></li>
 
-	<li><strong>excerpt</strong> - How many words you want to display for each item	<em>(Default is 0 or infinite)</em></li>
+	<li><strong>excerpt</strong> - How many words you want to display for each item	<em>(Default is 0 or infinite, use 'none' to remove the excerpt)</em></li>
 
 	<li><strong>read_more</strong> - Whether to display a read more link or not	<em>(true or false, defaults to true)</em></li>
 
 	<li><strong>new_window</strong> - Whether to open the title link and read more link in a new window	<em>(true or false, defaults to true)</em></li>
 
-	<li><strong>thumbnail</strong> - Whether or not you want to display a thumbnail, and if so, what size you want it to be<em>(true or false, defaults to true. Inserting a number will change the size, default is 150)</em></li>
+	<li><strong>thumbnail**</strong> - Whether or not you want to display a thumbnail, and if so, what size you want it to be<em>(true or false, defaults to true. Inserting a number will change the size, default is 150)</em></li>
 
 	<li><strong>source</strong> - Whether to display the source or not <em>(true or false, defaults to true)</em></li>
 
@@ -62,7 +62,9 @@ This plugin fetchs an RSS feed, or multiple feeds, and displays them in an unord
 	<li><strong>cache</strong> - How long you want the feed to cache the results in seconds <em>(Default is 43200, (12 hours))</em></li>
 </ul>
 
-Note: If you would like to see more features for the plugin, let me know.
+**PLEASE NOTE: Using thumbnails can cause longer load times depending on the feed you are fetching from, use with caution. 
+
+Please post any issues under the support tab. If you use and like this plugin, please don't forget to <strong>rate</strong> it! Additionally, if you would like to see more features for the plugin, please let me know.
 
 == Installation ==
 
@@ -91,3 +93,9 @@ This section describes how to install the plugin and get it working.
 * Control size of thumbnail
 * Set cache time (in seconds)
 * Now includes small CSS file, required for thumbnail support
+
+= 1.1.1 =
+* Support for aggregating multiple feeds into one list
+* Ability to order posts by date or reverse date
+* Options to display or remove source and date
+* Option to remove title
