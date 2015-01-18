@@ -1,7 +1,7 @@
 === RSS Retriever ===
 Contributors: tjtaylor, stephenkhouri
 Donate link: http://travistaylor.com/wp-rss-retriever-demo/
-Tags: rss, rss retriever, wp rss retriever, rss aggregator, rss feed, rss fetch feed, rss fetch, fetch feed
+Tags: rss, rss plugin, rss retriever, wp rss retriever, rss aggregator, rss feed, rss fetch feed, rss fetch, fetch feed, rss widget, rss aggregator widget, rss shortcode, rss feed shortcode, rss aggregator shortcode, rss multiple feeds, fetch multiple feeds
 Requires at least: 2.8
 Tested up to: 4.1
 Stable tag: 1.1.1
@@ -17,7 +17,7 @@ This plugin fetchs an RSS feed, or multiple feeds, and displays them in an unord
 <h4>Features:</h4>
 <ul>
 	<li>Fetch as many RSS feeds as you want</li>
-	<li>Display the RSS feed wherever you want using shortcode</li>
+	<li>Display the RSS feed wherever you want using shortcode, including text widgets</li>
 	<li>Control whether to display the entire RSS feeds content or just an excerpt</li>
 	<li>Control how many words display in the excerpt</li>
 	<li>Control whether it has a Read more link or not</li>
